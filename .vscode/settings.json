@@ -21,6 +21,12 @@
   "json.schemas": [
     {
       "fileMatch": [
+        "**/snippets/*.json"
+      ],
+      "url": "vscode://schemas/snippets"
+    },
+    {
+      "fileMatch": [
         "*.tmLanguage.json"
       ],
       "url": "https://raw.githubusercontent.com/Septh/tmlanguage/master/tmlanguage.json"
