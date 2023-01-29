@@ -19,6 +19,11 @@ This extension provides support for:
     - Syntax highlighting
     - Snippets for VICE’s keyboard matrix tuples
 
+- SDL keymap definition files for VICE (`sdl_*.vkm`)
+
+    - Syntax highlighting
+    - Snippets for VICE’s keyboard matrix tuples
+
 ## License
 
 Copyright (c) 2023 Claudia Pellegrino

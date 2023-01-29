@@ -48,6 +48,11 @@
         "language": "vice-keymap-gtk3",
         "scopeName": "source.vice.keymap.gtk3",
         "path": "share/vice-keymap-gtk3.tmLanguage.json"
+      },
+      {
+        "language": "vice-keymap-sdl",
+        "scopeName": "source.vice.keymap.sdl",
+        "path": "share/vice-keymap-sdl.tmLanguage.json"
       }
     ],
     "languages": [
@@ -80,12 +85,26 @@
           "gtk3_*.vkm"
         ],
         "configuration": "share/language-configuration.json"
+      },
+      {
+        "id": "vice-keymap-sdl",
+        "aliases": [
+          "VICE keymap (SDL)"
+        ],
+        "filenamePatterns": [
+          "sdl_*.vkm"
+        ],
+        "configuration": "share/language-configuration.json"
       }
     ],
     "snippets": [
       {
         "language": "vice-keymap-gtk3",
-        "path": "share/snippets/vice-keymap-gtk3.json"
+        "path": "share/snippets/vice-keymap.json"
+      },
+      {
+        "language": "vice-keymap-sdl",
+        "path": "share/snippets/vice-keymap.json"
       }
     ]
   },

@@ -36,7 +36,7 @@
       ]
     },
     "directive": {
-      "match": "^\\s*(!(\\w+)[^#]*)",
+      "match": "^\\s*(!(\\w+)[^#;/]*)",
       "captures": {
         "1": {
           "name": "meta.preprocessor entity.name.function.preprocessor.$2"
@@ -64,7 +64,7 @@
       ]
     },
     "hotkey-assign": {
-      "match": "^(\\S+)\\s+([^#]*)",
+      "match": "^(\\S+)\\s+([^#;/]*)",
       "captures": {
         "1": {
           "name": "meta.section.keynum",
