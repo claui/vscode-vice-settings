@@ -1,0 +1,697 @@
+{
+  "INST/DEL key (VICE keymapping tuple)": {
+    "prefix": [
+      "INST",
+      "DEL"
+    ],
+    "body": "0 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "RETURN key (VICE keymapping tuple)": {
+    "prefix": [
+      "RETURN"
+    ],
+    "body": "0 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "CRSR LEFT/RIGHT key (VICE keymapping tuple)": {
+    "prefix": [
+      "CRSR",
+      "LEFT",
+      "RIGHT"
+    ],
+    "body": "0 2 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "F7/F8 key (VICE keymapping tuple)": {
+    "prefix": [
+      "F7",
+      "F8"
+    ],
+    "body": "0 3 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "F1/F2 key (VICE keymapping tuple)": {
+    "prefix": [
+      "F1",
+      "F2"
+    ],
+    "body": "0 4 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "F3/F4 key (VICE keymapping tuple)": {
+    "prefix": [
+      "F3",
+      "F4"
+    ],
+    "body": "0 5 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "F5/F6 key (VICE keymapping tuple)": {
+    "prefix": [
+      "F5",
+      "F6"
+    ],
+    "body": "0 6 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "CRSR UP/DOWN key (VICE keymapping tuple)": {
+    "prefix": [
+      "CRSR",
+      "UP",
+      "DOWN"
+    ],
+    "body": "0 7 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "3/# key (VICE keymapping tuple)": {
+    "prefix": [
+      "3",
+      "#"
+    ],
+    "body": "1 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "W key (VICE keymapping tuple)": {
+    "prefix": [
+      "W"
+    ],
+    "body": "1 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "A key (VICE keymapping tuple)": {
+    "prefix": [
+      "A"
+    ],
+    "body": "1 2 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "4/$ key (VICE keymapping tuple)": {
+    "prefix": [
+      "4",
+      "$"
+    ],
+    "body": "1 3 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Z key (VICE keymapping tuple)": {
+    "prefix": [
+      "Z"
+    ],
+    "body": "1 4 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "S key (VICE keymapping tuple)": {
+    "prefix": [
+      "S"
+    ],
+    "body": "1 5 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "E key (VICE keymapping tuple)": {
+    "prefix": [
+      "E"
+    ],
+    "body": "1 6 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Left SHIFT key (VICE keymapping tuple)": {
+    "prefix": [
+      "SHIFT"
+    ],
+    "body": "1 7 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "5/% key (VICE keymapping tuple)": {
+    "prefix": [
+      "5",
+      "%"
+    ],
+    "body": "2 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "R key (VICE keymapping tuple)": {
+    "prefix": [
+      "R"
+    ],
+    "body": "2 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "D key (VICE keymapping tuple)": {
+    "prefix": [
+      "D"
+    ],
+    "body": "2 2 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "6/& key (VICE keymapping tuple)": {
+    "prefix": [
+      "6",
+      "%"
+    ],
+    "body": "2 3 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "C key (VICE keymapping tuple)": {
+    "prefix": [
+      "C"
+    ],
+    "body": "2 4 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "F key (VICE keymapping tuple)": {
+    "prefix": [
+      "F"
+    ],
+    "body": "2 5 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "T key (VICE keymapping tuple)": {
+    "prefix": [
+      "T"
+    ],
+    "body": "2 6 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "X key (VICE keymapping tuple)": {
+    "prefix": [
+      "X"
+    ],
+    "body": "2 7 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "7/' key (VICE keymapping tuple)": {
+    "prefix": [
+      "7",
+      "'"
+    ],
+    "body": "3 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Y key (VICE keymapping tuple)": {
+    "prefix": [
+      "Y"
+    ],
+    "body": "3 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "G key (VICE keymapping tuple)": {
+    "prefix": [
+      "G"
+    ],
+    "body": "3 2 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "8/( key (VICE keymapping tuple)": {
+    "prefix": [
+      "8",
+      "("
+    ],
+    "body": "3 3 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "B key (VICE keymapping tuple)": {
+    "prefix": [
+      "B"
+    ],
+    "body": "3 4 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "H key (VICE keymapping tuple)": {
+    "prefix": [
+      "H"
+    ],
+    "body": "3 5 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "U key (VICE keymapping tuple)": {
+    "prefix": [
+      "U"
+    ],
+    "body": "3 6 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "V key (VICE keymapping tuple)": {
+    "prefix": [
+      "V"
+    ],
+    "body": "3 7 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "9/) key (VICE keymapping tuple)": {
+    "prefix": [
+      "9",
+      ")"
+    ],
+    "body": "4 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "I key (VICE keymapping tuple)": {
+    "prefix": [
+      "I"
+    ],
+    "body": "4 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "J key (VICE keymapping tuple)": {
+    "prefix": [
+      "J"
+    ],
+    "body": "4 2 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "0 key (VICE keymapping tuple)": {
+    "prefix": [
+      "0"
+    ],
+    "body": "4 3 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "M key (VICE keymapping tuple)": {
+    "prefix": [
+      "M"
+    ],
+    "body": "4 4 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "K key (VICE keymapping tuple)": {
+    "prefix": [
+      "K"
+    ],
+    "body": "4 5 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "O key (VICE keymapping tuple)": {
+    "prefix": [
+      "O"
+    ],
+    "body": "4 6 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "N key (VICE keymapping tuple)": {
+    "prefix": [
+      "N"
+    ],
+    "body": "4 7 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "+ key (VICE keymapping tuple)": {
+    "prefix": [
+      "+",
+      "Plus"
+    ],
+    "body": "5 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "P key (VICE keymapping tuple)": {
+    "prefix": [
+      "P"
+    ],
+    "body": "5 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "L key (VICE keymapping tuple)": {
+    "prefix": [
+      "L"
+    ],
+    "body": "5 2 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "- key (VICE keymapping tuple)": {
+    "prefix": [
+      "-",
+      "_",
+      "Minus"
+    ],
+    "body": "5 3 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "./> key (VICE keymapping tuple)": {
+    "prefix": [
+      ".",
+      ">"
+    ],
+    "body": "5 4 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  ":/[ key (VICE keymapping tuple)": {
+    "prefix": [
+      ":",
+      "["
+    ],
+    "body": "5 5 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "@ key (VICE keymapping tuple)": {
+    "prefix": [
+      "@"
+    ],
+    "body": "5 6 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  ",/< key (VICE keymapping tuple)": {
+    "prefix": [
+      ",",
+      "<"
+    ],
+    "body": "5 7 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "£ key (VICE keymapping tuple)": {
+    "prefix": [
+      "£",
+      "Pound"
+    ],
+    "body": "6 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "* key (VICE keymapping tuple)": {
+    "prefix": [
+      "*"
+    ],
+    "body": "6 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  ";/] key (VICE keymapping tuple)": {
+    "prefix": [
+      ";",
+      "]"
+    ],
+    "body": "6 2 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "CLR/HOME key (VICE keymapping tuple)": {
+    "prefix": [
+      "CLR",
+      "HOME"
+    ],
+    "body": "6 3 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Right SHIFT key (VICE keymapping tuple)": {
+    "prefix": [
+      "SHIFT"
+    ],
+    "body": "6 4 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "= key (VICE keymapping tuple)": {
+    "prefix": [
+      "=",
+      "Equal"
+    ],
+    "body": "6 5 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Arrow up key (VICE keymapping tuple)": {
+    "prefix": [
+      "Arrow up"
+    ],
+    "body": "6 6 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Slash/? key (VICE keymapping tuple)": {
+    "prefix": [
+      "/",
+      "?"
+    ],
+    "body": "6 7 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "1/! key (VICE keymapping tuple)": {
+    "prefix": [
+      "1",
+      "!"
+    ],
+    "body": "7 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Arrow left key (VICE keymapping tuple)": {
+    "prefix": [
+      "Arrow left"
+    ],
+    "body": "7 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "CTRL key (VICE keymapping tuple)": {
+    "prefix": [
+      "CTRL",
+      "CONTROL"
+    ],
+    "body": "7 2 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "2/\" key (VICE keymapping tuple)": {
+    "prefix": [
+      "2",
+      "\""
+    ],
+    "body": "7 3 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Space key (VICE keymapping tuple)": {
+    "prefix": [
+      "Space"
+    ],
+    "body": "7 4 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "CBM key (VICE keymapping tuple)": {
+    "prefix": [
+      "C=",
+      "CBM",
+      "Commodore"
+    ],
+    "body": "7 5 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Q key (VICE keymapping tuple)": {
+    "prefix": [
+      "Q"
+    ],
+    "body": "7 6 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "RUN/STOP key (VICE keymapping tuple)": {
+    "prefix": [
+      "RUN",
+      "STOP"
+    ],
+    "body": "7 7 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Joystick keymap A: Fire": {
+    "prefix": [
+      "Joystick A Fire",
+      "Fire"
+    ],
+    "body": "-1 0",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap A: Down/Left": {
+    "prefix": [
+      "Joystick A Down/Left",
+      "Down/Left",
+      "Left",
+      "South/West",
+      "West"
+    ],
+    "body": "-1 1",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap A: Down": {
+    "prefix": [
+      "Joystick A Down",
+      "Down",
+      "South"
+    ],
+    "body": "-1 2",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap A: Down/Right": {
+    "prefix": [
+      "Joystick A Down/Right",
+      "Down/Right",
+      "Right",
+      "South/East",
+      "East"
+    ],
+    "body": "-1 3",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap A: Left": {
+    "prefix": [
+      "Joystick A Left",
+      "Left",
+      "West"
+    ],
+    "body": "-1 4",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap A: Right": {
+    "prefix": [
+      "Joystick A Right",
+      "Right",
+      "East"
+    ],
+    "body": "-1 5",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap A: Up/Left": {
+    "prefix": [
+      "Joystick A Up/Left",
+      "Up/Left",
+      "Left",
+      "North/West",
+      "West"
+    ],
+    "body": "-1 6",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap A: Up": {
+    "prefix": [
+      "Joystick A Up",
+      "Up",
+      "North"
+    ],
+    "body": "-1 7",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap A: Up/Right": {
+    "prefix": [
+      "Joystick A Up/Right",
+      "Up/Right",
+      "Right",
+      "North/East",
+      "East"
+    ],
+    "body": "-1 8",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Fire": {
+    "prefix": [
+      "Joystick B Fire",
+      "Fire"
+    ],
+    "body": "-2 0",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Down/Left": {
+    "prefix": [
+      "Joystick B Down/Left",
+      "Down/Left",
+      "Left",
+      "South/West",
+      "West"
+    ],
+    "body": "-2 1",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Down": {
+    "prefix": [
+      "Joystick B Down",
+      "Down",
+      "South"
+    ],
+    "body": "-2 2",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Down/Right": {
+    "prefix": [
+      "Joystick B Down/Right",
+      "Down/Right",
+      "Right",
+      "South/East",
+      "East"
+    ],
+    "body": "-2 3",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Left": {
+    "prefix": [
+      "Joystick B Left",
+      "Left",
+      "West"
+    ],
+    "body": "-2 4",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Right": {
+    "prefix": [
+      "Joystick B Right",
+      "Right",
+      "East"
+    ],
+    "body": "-2 5",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Up/Left": {
+    "prefix": [
+      "Joystick B Up/Left",
+      "Up/Left",
+      "Left",
+      "North/West",
+      "West"
+    ],
+    "body": "-2 6",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Up": {
+    "prefix": [
+      "Joystick B Up",
+      "Up",
+      "North"
+    ],
+    "body": "-2 7",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "Joystick keymap B: Up/Right": {
+    "prefix": [
+      "Joystick B Up/Right",
+      "Up/Right",
+      "Right",
+      "North/East",
+      "East"
+    ],
+    "body": "-2 8",
+    "description": "Insert VICE keymapping matrix tuple for this joystick event"
+  },
+  "First RESTORE key (VICE keymapping tuple)": {
+    "prefix": [
+      "RESTORE"
+    ],
+    "body": "-3 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Second RESTORE key (VICE keymapping tuple)": {
+    "prefix": [
+      "RESTORE"
+    ],
+    "body": "-3 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "40/80 column key (VICE keymapping tuple)": {
+    "prefix": [
+      "40/80 column",
+      "column"
+    ],
+    "body": "-4 0 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "ASCII/DIN key (VICE keymapping tuple)": {
+    "prefix": [
+      "ASCII/DIN",
+      "DIN"
+    ],
+    "body": "-4 1 ",
+    "description": "Insert VICE keymapping matrix tuple for this key on a Commodore 8-bit keyboard"
+  },
+  "Joyport keypad": {
+    "prefix": [
+      "Joyport keypad",
+      "Keypad"
+    ],
+    "body": "-5 ${1:keypad number from 0 to 19} ",
+    "description": "Insert VICE keymapping matrix tuple for this keypad event"
+  }
+}
