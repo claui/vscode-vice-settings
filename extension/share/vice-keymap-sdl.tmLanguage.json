@@ -1,0 +1,126 @@
+{
+  "name": "VICE keymap (SDL)",
+  "scopeName": "source.vice.keymap.sdl",
+  "uuid": "2890acfc-7482-4574-bab4-929d09c4129f",
+  "patterns": [
+    {
+      "include": "source.vice.base"
+    },
+    {
+      "comment": "A directive, which starts with the `!` character",
+      "include": "#directive"
+    },
+    {
+      "comment": "Mapping a host key number to a target key",
+      "include": "#keymap-assign"
+    }
+  ],
+  "repository": {
+    "directive": {
+      "match": "^\\s*(!(\\w+)[^#;/]*)",
+      "captures": {
+        "1": {
+          "name": "meta.preprocessor entity.name.function.preprocessor.$2"
+        },
+        "2": {
+          "name": "meta.section.directive.type.$2",
+          "patterns": [
+            {
+              "include": "#directive-type"
+            }
+          ]
+        }
+      }
+    },
+    "directive-type": {
+      "patterns": [
+        {
+          "match": "[LV]CBM|CLEAR|[LV]CTRL|INCLUDE|[LRV]SHIFT|SHIFTL|UNDEF",
+          "name": "meta.keyword.$0 keyword.other.$0 strong.$0"
+        },
+        {
+          "match": ".*",
+          "name": "invalid.illegal.directive.type"
+        }
+      ]
+    },
+    "keymap-assign": {
+      "match": "^(\\S+)\\s+([^#;/]*)",
+      "captures": {
+        "1": {
+          "name": "meta.section.keymap.host.keynum",
+          "patterns": [
+            {
+              "include": "#keynum"
+            }
+          ]
+        },
+        "2": {
+          "name": "meta.section.keymap.target",
+          "patterns": [
+            {
+              "include": "#target"
+            }
+          ]
+        }
+      }
+    },
+    "keynum": {
+      "patterns": [
+        {
+          "match": "\\d+",
+          "name": "constant.language.keynum.$1"
+        },
+        {
+          "match": ".*",
+          "name": "invalid.illegal.keynum"
+        }
+      ]
+    },
+    "number": {
+      "patterns": [
+        {
+          "match": "-?(0[xX])([0-9a-fA-F]+)",
+          "name": "constant.numeric.hex.vice"
+        },
+        {
+          "match": "-?\\d+",
+          "name": "constant.numeric.dec.vice"
+        },
+        {
+          "match": ".*",
+          "name": "invalid.illegal.number"
+        }
+      ]
+    },
+    "target": {
+      "match": "(\\S+)\\s+(\\S+)(?:\\s+(\\S+))?",
+      "captures": {
+        "1": {
+          "name": "meta.section.target.group1",
+          "patterns": [
+            {
+              "include": "#number"
+            }
+          ]
+        },
+        "2": {
+          "name": "meta.section.target.group2",
+          "patterns": [
+            {
+              "include": "#number"
+            }
+          ]
+        },
+        "3": {
+          "name": "meta.section.target.group3",
+          "patterns": [
+            {
+              "include": "#number"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

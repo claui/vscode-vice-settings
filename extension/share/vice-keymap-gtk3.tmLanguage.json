@@ -17,7 +17,7 @@
   ],
   "repository": {
     "directive": {
-      "match": "^\\s*(!(\\w+)[^#]*)",
+      "match": "^\\s*(!(\\w+)[^#;/]*)",
       "captures": {
         "1": {
           "name": "meta.preprocessor entity.name.function.preprocessor.$2"
@@ -45,7 +45,7 @@
       ]
     },
     "keymap-assign": {
-      "match": "^(\\S+)\\s+([^#]*)",
+      "match": "^(\\S+)\\s+([^#;/]*)",
       "captures": {
         "1": {
           "name": "meta.section.keymap.host.keysym",
@@ -82,7 +82,7 @@
       ]
     },
     "target": {
-      "match": "(\\S+)\\s+(\\S+)\\s+(\\S+)",
+      "match": "(\\S+)\\s+(\\S+)(?:\\s+(\\S+))?",
       "captures": {
         "1": {
           "name": "meta.section.target.group1",
