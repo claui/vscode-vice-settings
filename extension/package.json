@@ -19,17 +19,16 @@
         "title": "VICE Settings: Show extension log"
       }
     ],
-    "configuration": {
-      "title": "VICE Settings",
-      "properties": {
-        "vice-settings.executablePath": {
-          "type": "string",
-          "markdownDescription": "Path to the `foo` executable, e. g. `/usr/local/bin/foo`.  \nLeave blank if it’s already on your `PATH`.",
-          "scope": "machine-overridable"
-        }
+    "configurationDefaults": {
+      "[vice-hotkeys-gtk3]": {
+        "editor.stickyTabStops": true,
+        "editor.tabSize": 32
+      },
+      "[vice-keymap-gtk3]": {
+        "editor.stickyTabStops": true,
+        "editor.tabSize": 16
       }
     },
-    "configurationDefaults": {},
     "grammars": [
       {
         "scopeName": "source.vice.base",
@@ -44,6 +43,11 @@
         "language": "vice-hotkeys-sdl",
         "scopeName": "source.vice.hotkeys.sdl",
         "path": "share/vice-hotkeys-sdl.tmLanguage.json"
+      },
+      {
+        "language": "vice-keymap-gtk3",
+        "scopeName": "source.vice.keymap.gtk3",
+        "path": "share/vice-keymap-gtk3.tmLanguage.json"
       }
     ],
     "languages": [
@@ -64,6 +68,16 @@
         ],
         "filenamePatterns": [
           "sdl-*.vhk"
+        ],
+        "configuration": "share/language-configuration.json"
+      },
+      {
+        "id": "vice-keymap-gtk3",
+        "aliases": [
+          "VICE keymap (GTK3)"
+        ],
+        "filenamePatterns": [
+          "gtk3_*.vkm"
         ],
         "configuration": "share/language-configuration.json"
       }
