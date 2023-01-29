@@ -4,11 +4,20 @@ Keymaps, hotkeys and other settings for VICE
 
 ## What it does
 
-This extension provides syntax highlighting for:
+This extension provides support for:
 
 - GTK-3 hotkey definition files for VICE (`gtk3-*.vhk`)
 
+    - Syntax highlighting
+
 - SDL hotkey definition files for VICE (`sdl-*.vhk`)
+
+    - Syntax highlighting
+
+- GTK-3 keymap definition files for VICE (`gtk3_*.vkm`)
+
+    - Syntax highlighting
+    - Snippets for VICE’s keyboard matrix tuples
 
 ## License
 
