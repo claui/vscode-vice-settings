@@ -32,8 +32,8 @@
     "configurationDefaults": {},
     "grammars": [
       {
-        "scopeName": "source.vice.hotkeys",
-        "path": "share/vice-hotkeys.tmLanguage.json"
+        "scopeName": "source.vice.base",
+        "path": "share/vice.tmLanguage.json"
       },
       {
         "language": "vice-hotkeys-gtk3",

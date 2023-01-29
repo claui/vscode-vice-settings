@@ -4,7 +4,7 @@
   "uuid": "8467d0c1-c96c-4665-8b2c-933a3f7e1417",
   "patterns": [
     {
-      "include": "source.vice.hotkeys"
+      "include": "source.vice.base"
     },
     {
       "comment": "A directive, which starts with the `!` character",

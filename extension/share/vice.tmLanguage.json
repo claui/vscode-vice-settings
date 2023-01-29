@@ -1,6 +1,6 @@
 {
-  "name": "VICE hotkeys",
-  "scopeName": "source.vice.hotkeys",
+  "name": "Base grammar for VICE settings",
+  "scopeName": "source.vice.base",
   "uuid": "34fde367-c760-4aec-8019-f5f80eddd84e",
   "patterns": [
     {
