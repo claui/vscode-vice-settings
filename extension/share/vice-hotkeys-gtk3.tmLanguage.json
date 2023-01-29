@@ -1,0 +1,112 @@
+{
+  "name": "VICE hotkeys (GTK 3)",
+  "scopeName": "source.vice.hotkeys.gtk3",
+  "uuid": "8467d0c1-c96c-4665-8b2c-933a3f7e1417",
+  "patterns": [
+    {
+      "include": "source.vice.hotkeys"
+    },
+    {
+      "comment": "A directive, which starts with the `!` character",
+      "include": "#directive"
+    },
+    {
+      "comment": "Assigning a hotkey to an action",
+      "include": "#hotkey-assign"
+    }
+  ],
+  "repository": {
+    "builtin-action": {
+      "patterns": [
+        {
+          "match": "\\b(advance-frame|cart-attach|cart-detach|cart-freeze|debug-autoplayback-frames|debug-blitter-log-toggle|debug-core-dump-toggle|debug-dma-log-toggle|debug-flash-log-toggle|debug-trace-cpu-toggle|debug-trace-drive-10-toggle|debug-trace-drive-11-toggle|debug-trace-drive-8-toggle|debug-trace-drive-9-toggle|debug-trace-iec-toggle|debug-trace-ieee488-toggle|debug-trace-mode|diagnostic-pin-toggle|drive-attach-10:0|drive-attach-10:1|drive-attach-11:0|drive-attach-11:1|drive-attach-8:0|drive-attach-8:1|drive-attach-9:0|drive-attach-9:1|drive-create|drive-detach-10:0|drive-detach-10:1|drive-detach-11:0|drive-detach-11:1|drive-detach-8:0|drive-detach-8:1|drive-detach-9:0|drive-detach-9:1|edit-copy|edit-paste|fliplist-add-10:0|fliplist-add-10:1|fliplist-add-11:0|fliplist-add-11:1|fliplist-add-8:0|fliplist-add-8:1|fliplist-add-9:0|fliplist-add-9:1|fliplist-clear-10:0|fliplist-clear-10:1|fliplist-clear-11:0|fliplist-clear-11:1|fliplist-clear-8:0|fliplist-clear-8:1|fliplist-clear-9:0|fliplist-clear-9:1|fliplist-load-10:0|fliplist-load-10:1|fliplist-load-11:0|fliplist-load-11:1|fliplist-load-8:0|fliplist-load-8:1|fliplist-load-9:0|fliplist-load-9:1|fliplist-next-10:0|fliplist-next-10:1|fliplist-next-11:0|fliplist-next-11:1|fliplist-next-8:0|fliplist-next-8:1|fliplist-next-9:0|fliplist-next-9:1|fliplist-previous-10:0|fliplist-previous-10:1|fliplist-previous-11:0|fliplist-previous-11:1|fliplist-previous-8:0|fliplist-previous-8:1|fliplist-previous-9:0|fliplist-previous-9:1|fliplist-remove-10:0|fliplist-remove-10:1|fliplist-remove-11:0|fliplist-remove-11:1|fliplist-remove-8:0|fliplist-remove-8:1|fliplist-remove-9:0|fliplist-remove-9:1|fliplist-save-10:0|fliplist-save-10:1|fliplist-save-11:0|fliplist-save-11:1|fliplist-save-8:0|fliplist-save-8:1|fliplist-save-9:0|fliplist-save-9:1|fullscreen-decorations-toggle|fullscreen-toggle|help-about|help-command-line|help-compile-time|help-hotkeys|help-manual|history-milestone-reset|history-milestone-set|history-playback-start|history-playback-stop|history-record-start|history-record-stop|hotkeys-clear|hotkeys-default|hotkeys-load|hotkeys-load-from|hotkeys-save|hotkeys-save-to|keyset-joystick-toggle|media-record|media-stop|monitor-open|mouse-grab-toggle|pause-toggle|psid-ffwd|psid-load|psid-loop-toggle|psid-override-toggle|psid-pause|psid-play|psid-playlist-add|psid-playlist-clear|psid-playlist-first|psid-playlist-last|psid-playlist-load|psid-playlist-next|psid-playlist-previous|psid-playlist-save|psid-stop|psid-subtune-1|psid-subtune-10|psid-subtune-11|psid-subtune-12|psid-subtune-13|psid-subtune-14|psid-subtune-15|psid-subtune-16|psid-subtune-17|psid-subtune-18|psid-subtune-19|psid-subtune-2|psid-subtune-20|psid-subtune-21|psid-subtune-22|psid-subtune-23|psid-subtune-24|psid-subtune-25|psid-subtune-26|psid-subtune-27|psid-subtune-28|psid-subtune-29|psid-subtune-3|psid-subtune-30|psid-subtune-4|psid-subtune-5|psid-subtune-6|psid-subtune-7|psid-subtune-8|psid-subtune-9|psid-subtune-next|psid-subtune-previous|quit|reset-drive-10|reset-drive-11|reset-drive-8|reset-drive-9|reset-hard|reset-soft|restore-display|screenshot-quicksave|settings-default|settings-dialog|settings-load|settings-load-extra|settings-load-from|settings-save|settings-save-to|show-statusbar-toggle|smart-attach|snapshot-load|snapshot-quickload|snapshot-quicksave|snapshot-save|speed-cpu-10|speed-cpu-100|speed-cpu-20|speed-cpu-200|speed-cpu-50|speed-cpu-custom|speed-fps-50|speed-fps-50|speed-fps-60|speed-fps-custom|swap-controlport-toggle|tape-attach-1|tape-attach-2|tape-create-1|tape-create-2|tape-detach-1|tape-detach-2|tape-ffwd-1|tape-ffwd-2|tape-play-1|tape-play-2|tape-record-1|tape-record-2|tape-reset-1|tape-reset-2|tape-reset-counter-1|tape-reset-counter-2|tape-rewind-1|tape-rewind-2|tape-stop-1|tape-stop-2|warp-mode-toggle)\\b",
+          "name": "constant.language.builtin.action.vice"
+        },
+        {
+          "match": ".*",
+          "name": "invalid.illegal.builtin.action"
+        }
+      ]
+    },
+    "directive": {
+      "match": "^\\s*(!(\\w+).*)$",
+      "captures": {
+        "1": {
+          "name": "meta.preprocessor entity.name.function.preprocessor.$2"
+        },
+        "2": {
+          "name": "meta.section.directive.type.$2",
+          "patterns": [
+            {
+              "include": "#directive-type"
+            }
+          ]
+        }
+      }
+    },
+    "directive-type": {
+      "patterns": [
+        {
+          "match": "clear|debug|include",
+          "name": "meta.keyword.$0 keyword.other.$0 strong.$0"
+        },
+        {
+          "match": ".*",
+          "name": "invalid.illegal.directive.type"
+        }
+      ]
+    },
+    "hotkey": {
+      "patterns": [
+        {
+          "match": "(<)(\\w+)(>)",
+          "captures": {
+            "1": {
+              "name": "punctuation.definition.tag.modifier.begin.vice"
+            },
+            "2": {
+              "patterns": [
+                {
+                  "match": "Alt|Command|Control|Shift",
+                  "name": "constant.character.escape.modifier.vice"
+                },
+                {
+                  "match": ".*",
+                  "name": "invalid.illegal.modifier"
+                }
+              ]
+            },
+            "3": {
+              "name": "punctuation.definition.tag.modifier.end.vice"
+            }
+          }
+        },
+        {
+          "match": "\\w",
+          "name": "constant.character"
+        }
+      ]
+    },
+    "hotkey-assign": {
+      "match": "^(\\S+)\\s+(.*)$",
+      "captures": {
+        "1": {
+          "name": "meta.section.action",
+          "patterns": [
+            {
+              "include": "#builtin-action"
+            }
+          ]
+        },
+        "2": {
+          "name": "meta.section.hotkey",
+          "patterns": [
+            {
+              "include": "#hotkey"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

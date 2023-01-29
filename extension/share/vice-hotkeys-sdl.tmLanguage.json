@@ -1,0 +1,100 @@
+{
+  "name": "VICE hotkeys (SDL)",
+  "scopeName": "source.vice.hotkeys.sdl",
+  "uuid": "b517d01c-9c13-485b-960a-73b3a28bcc6f",
+  "patterns": [
+    {
+      "include": "source.vice.hotkeys"
+    },
+    {
+      "comment": "A directive, which starts with the `!` character",
+      "include": "#directive"
+    },
+    {
+      "comment": "Assigning a hotkey to an action",
+      "include": "#hotkey-assign"
+    }
+  ],
+  "repository": {
+    "builtin-action": {
+      "patterns": [
+        {
+          "match": "([^&]+)(&)?",
+          "captures": {
+            "1": {
+              "name": "constant.language.builtin.action.vice"
+            },
+            "2": {
+              "name": "constant.other.placeholder.separator.action.vice"
+            }
+          }
+        },
+        {
+          "match": ".*",
+          "name": "invalid.illegal.builtin.action"
+        }
+      ]
+    },
+    "directive": {
+      "match": "^\\s*(!(\\w+).*)$",
+      "captures": {
+        "1": {
+          "name": "meta.preprocessor entity.name.function.preprocessor.$2"
+        },
+        "2": {
+          "name": "meta.section.directive.type.$2",
+          "patterns": [
+            {
+              "include": "#directive-type"
+            }
+          ]
+        }
+      }
+    },
+    "directive-type": {
+      "patterns": [
+        {
+          "match": "CLEAR",
+          "name": "meta.keyword.$0 keyword.other.$0 strong.$0"
+        },
+        {
+          "match": ".*",
+          "name": "invalid.illegal.directive.type"
+        }
+      ]
+    },
+    "hotkey-assign": {
+      "match": "^(\\S+)\\s+(.*)$",
+      "captures": {
+        "1": {
+          "name": "meta.section.keynum",
+          "patterns": [
+            {
+              "include": "#keynum"
+            }
+          ]
+        },
+        "2": {
+          "name": "meta.section.action",
+          "patterns": [
+            {
+              "include": "#builtin-action"
+            }
+          ]
+        }
+      }
+    },
+    "keynum": {
+      "patterns": [
+        {
+          "match": "\\d+",
+          "name": "constant.numeric.keynum.vice"
+        },
+        {
+          "match": ".*",
+          "name": "invalid.illegal.modifier"
+        }
+      ]
+    }
+  }
+}

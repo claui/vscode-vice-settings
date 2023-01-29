@@ -1,0 +1,79 @@
+{
+  "name": "vice-settings",
+  "version": "0.1.0-snapshot",
+  "publisher": "claui",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "license": "SEE LICENSE IN README.md",
+  "displayName": "VICE Settings",
+  "description": "Keymaps, hotkeys and other settings for VICE",
+  "categories": [],
+  "keywords": [],
+  "preview": true,
+  "main": "dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vice-settings.action.showLog",
+        "title": "VICE Settings: Show extension log"
+      }
+    ],
+    "configuration": {
+      "title": "VICE Settings",
+      "properties": {
+        "vice-settings.executablePath": {
+          "type": "string",
+          "markdownDescription": "Path to the `foo` executable, e. g. `/usr/local/bin/foo`.  \nLeave blank if it’s already on your `PATH`.",
+          "scope": "machine-overridable"
+        }
+      }
+    },
+    "configurationDefaults": {},
+    "grammars": [
+      {
+        "scopeName": "source.vice.hotkeys",
+        "path": "share/vice-hotkeys.tmLanguage.json"
+      },
+      {
+        "language": "vice-hotkeys-gtk3",
+        "scopeName": "source.vice.hotkeys.gtk3",
+        "path": "share/vice-hotkeys-gtk3.tmLanguage.json"
+      },
+      {
+        "language": "vice-hotkeys-sdl",
+        "scopeName": "source.vice.hotkeys.sdl",
+        "path": "share/vice-hotkeys-sdl.tmLanguage.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "vice-hotkeys-gtk3",
+        "aliases": [
+          "VICE hotkeys (GTK3)"
+        ],
+        "filenamePatterns": [
+          "gtk3-*.vhk"
+        ],
+        "configuration": "share/language-configuration.json"
+      },
+      {
+        "id": "vice-hotkeys-sdl",
+        "aliases": [
+          "VICE hotkeys (SDL)"
+        ],
+        "filenamePatterns": [
+          "sdl-*.vhk"
+        ],
+        "configuration": "share/language-configuration.json"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:vice-hotkeys"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "repository": "github:claui/vscode-vice-settings"
+}
