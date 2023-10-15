@@ -67,16 +67,21 @@ the following numbering scheme:
 
 ### Publishing to the Marketplace
 
-After deciding on a target version, run:
+1. Check out the `main` branch and make sure it is pristine.
 
-- `git checkout main`
-- `yarn login`
-- `yarn publish-vsce [--pre-release] [version]`
+2. Decide on a new version number under which to publish the package.
 
-The `yarn publish-vsce` command first updates the version number in
-[extension/package.json](./extension/package.json) to the given
-version. Then it packages and publishes the extension to the VS Code
-Extension Marketplace.
+3. Edit the `extension/package.json` manifest to reflect
+   the new version number.
+
+4. Run: `yarn package`
+
+5. If necessary, run: `yarn login`
+
+6. Run: `yarn publish-vsce`
+
+The final `yarn […] publish-vsce` command packages and publishes the
+extension to the VS Code Extension Marketplace.
 
 ### Publishing to the Open VSX Registry
 
@@ -96,10 +101,12 @@ Follow these steps to publish the extension to the Open VSX Registry:
 
 2. Make sure you have published the extension to the VS Code
    Extension Marketplace. This ensures that the version number has
-   been updated and that a `.vsix` file has been generated.
+   been updated.
+3. Run `yarn package` to generate a `.vsix` package.
 
-3. Run the `yarn ovsx publish` command with the correct
-   `extension/[…].vsix` file as the sole argument. Example in Bash:
+4. Run the `yarn ovsx publish` command with the correct
+   `extension/[…].vsix` file as the sole argument.  
+   Example in Bash:
 
    ```bash
    yarn ovsx publish "extension/vice-settings-$(jq -r .version extension/package.json).vsix"
@@ -111,7 +118,7 @@ With the extension now published on the Marketplace, commit the
 change, create a tag, push, cut a GitHub (pre-)release, and create a
 pull request against `main`:
 
-```
+```bash
 (
   set -eux
   git checkout -b publish
@@ -121,7 +128,7 @@ pull request against `main`:
   git commit --edit -m "Release ${tag}"
   git tag "${tag}"
   git push --tags
-  gh release create --generate-notes --prerelease "${tag}"
+  gh release create --draft --generate-notes "${tag}"
   gh pr create --fill --web
 )
 ```
@@ -167,7 +174,7 @@ dependencies. That includes the `@types` and `@yarnpkg` scopes but
 excludes Yarn itself (see the `yarn upgrade-yarn-itself` section).
 
 Also excluded is the `@types/vscode` package. For details, see
-section _Upgrading the VS Code API_.
+section _Upgrading the VS Code API version_.
 
 ### yarn upgrade-yarn-itself
 
@@ -225,9 +232,13 @@ Since this project is already patching this dependency, you may want to apply th
 patch < path/to/this/project/.yarn/patches/@vscode-vsce-npm-2.21.1.patch
 ```
 
-### Finish editing
+### Committing a patch for the first time
 
-To commit the patch, run `yarn repatch -- <workdir>`.
+To commit a patch for the first time, run `yarn patch-commit -s <workdir>`.
+
+### Modifying an existing patch
+
+To commit a modified patch, run `yarn repatch -- <workdir>`.
 
 For example, if the temporary working directory is `/tmp/xfs-36e26fe6/user`, run:
 

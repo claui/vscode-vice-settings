@@ -10,7 +10,6 @@
   "description": "Keymaps, hotkeys and other settings for VICE",
   "categories": [],
   "keywords": [],
-  "preview": true,
   "main": "dist/extension.js",
   "icon": "icon.png",
   "contributes": {
