@@ -8,21 +8,21 @@ This extension provides support for:
 
 - GTK-3 hotkey definition files for VICE (`gtk3-*.vhk`)
 
-    - Syntax highlighting
+  - Syntax highlighting
 
 - SDL hotkey definition files for VICE (`sdl-*.vhk`)
 
-    - Syntax highlighting
+  - Syntax highlighting
 
 - GTK-3 keymap definition files for VICE (`gtk3_*.vkm`)
 
-    - Syntax highlighting
-    - Snippets for VICE’s keyboard matrix tuples
+  - Syntax highlighting
+  - Snippets for VICE’s keyboard matrix tuples
 
 - SDL keymap definition files for VICE (`sdl_*.vkm`)
 
-    - Syntax highlighting
-    - Snippets for VICE’s keyboard matrix tuples
+  - Syntax highlighting
+  - Snippets for VICE’s keyboard matrix tuples
 
 ## License
 
