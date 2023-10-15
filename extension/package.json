@@ -12,6 +12,7 @@
   "keywords": [],
   "preview": true,
   "main": "dist/extension.js",
+  "icon": "icon.png",
   "contributes": {
     "commands": [
       {
